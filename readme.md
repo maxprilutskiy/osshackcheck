@@ -41,3 +41,11 @@ open http://localhost:3000 # opens the web browser with the report
 By default, the app displays the daily breakdown of contribution pace for several popular UI component libraries:
 
 ![Demo image](https://github.com/maxprilutskiy/osshackcheck/raw/main/demo.png)
+
+### Suggested Usage During the Hackathon
+
+1. Participants submit their projects.
+2. The projects undergo review, and the leaderboard is selected.
+3. The top-selected projects are then examined using this tool, and authors may be asked clarifying questions if needed.
+4. Teams found to have violated the rules (if any) are disqualified.
+5. Winners are officially announced.
