@@ -1,0 +1,33 @@
+<div>
+  <canvas id="myChart"></canvas>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+<script>
+  window.LABELS = ["2023-11-13T23:00:00.000Z","2023-11-14T23:00:00.000Z","2023-11-15T23:00:00.000Z","2023-11-16T23:00:00.000Z","2023-11-17T23:00:00.000Z","2023-11-18T23:00:00.000Z","2023-11-19T23:00:00.000Z","2023-11-20T23:00:00.000Z","2023-11-21T23:00:00.000Z","2023-11-22T23:00:00.000Z","2023-11-23T23:00:00.000Z","2023-11-24T23:00:00.000Z","2023-11-25T23:00:00.000Z","2023-11-26T23:00:00.000Z","2023-11-27T23:00:00.000Z"];
+  window.DATASETS = [{"label":"nextui-org/nextui","data":[0,1.2,0,0,0,0,0.8,0,0,0,9,0,0,2.8,0]},{"label":"ant-design/ant-design","data":[2.37,0.11,1.53,70.84,0,0.21,194.26,53.74,32.84,36,19.21,0,0.11,16.63,0]},{"label":"mui/material-ui","data":[20.71,97.21,44.93,288.14,5,0,91.57,82.07,41.86,195.07,5.07,0.14,91.64,217.07,0]}];
+</script>
+
+<script>
+  const ctx = document.getElementById('myChart');
+
+  new Chart(ctx, {
+    type: 'bar',
+    data: {
+      labels: window.LABELS,
+      datasets: window.DATASETS.map((dataset) => ({
+        label: dataset.label,
+        data: dataset.data,
+        borderWidth: 1
+      })),
+    },
+    options: {
+      scales: {
+        y: {
+          beginAtZero: true
+        }
+      }
+    }
+  });
+</script>

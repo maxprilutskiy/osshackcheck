@@ -1,0 +1,33 @@
+<div>
+  <canvas id="myChart"></canvas>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+<script>
+  window.LABELS = [];
+  window.DATASETS = [];
+</script>
+
+<script>
+  const ctx = document.getElementById('myChart');
+
+  new Chart(ctx, {
+    type: 'bar',
+    data: {
+      labels: window.LABELS,
+      datasets: window.DATASETS.map((dataset) => ({
+        label: dataset.label,
+        data: dataset.data,
+        borderWidth: 1
+      })),
+    },
+    options: {
+      scales: {
+        y: {
+          beginAtZero: true
+        }
+      }
+    }
+  });
+</script>
