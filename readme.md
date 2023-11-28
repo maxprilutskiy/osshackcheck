@@ -44,6 +44,6 @@ pnpm run start # starts the webserver
 open http://localhost:3000 # opens web browser with the report
 ```
 
-By default, the app will show the daily breakdown of contribution pace for several popular UI component libraries:
+By default, the app displays the daily breakdown of contribution pace for several popular UI component libraries:
 
 ![Demo image](https://github.com/maxprilutskiy/osshackcheck/raw/main/demo.png)
